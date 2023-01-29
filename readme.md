@@ -1,0 +1,1 @@
+Projeto final do curso Web Moderno em JS 2022, Abordando todas as ferramentas usadas no curso para a criação de um projeto real de uma plataforma de Cursos, usando node, express, postgres, mongoDB no backend e o framework Vue para o frontend!
