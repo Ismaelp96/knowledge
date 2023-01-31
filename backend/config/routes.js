@@ -5,6 +5,8 @@ module.exports = (app) => {
 
   app.route('/categories').get(app.api.category.get).post(app.api.category.save)
 
+  // cuidado com a ordem! tem que ser antes de categories/:id
+  app.route('/categories/tree').get(app.api.category.getTree)
   app
     .route('/categories/:id')
     .get(app.api.category.getById)
