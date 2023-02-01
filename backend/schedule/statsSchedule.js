@@ -16,6 +16,7 @@ module.exports = (app) => {
       articles: articlesCount.count,
       createdAt: new Date(),
     })
+
     const changeUsers = !lastStat || stat.users !== lastStat.users
     const changeCategories =
       !lastStat || stat.categories !== lastStat.categories

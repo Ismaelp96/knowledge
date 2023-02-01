@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
+
+mongoose.set('strictQuery', true)
+
 mongoose
-  .connect('mongodb://localhost/knowledge_stats', {
+  .connect('mongodb://localhost:27017/knowledge_stats', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
